@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62,5%;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: antiquewhite;
+    margin: 20px
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 200px;
+    text-decoration: none;
+    color: black;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+li {
+    height: 50px;
+    width: 100px;
+}
+.emp {
+    width: 200px;
+}
+.logo {
+    width:  200px;
+    align-items: center;
+    margin: 10px;
+}
+.logo img {
+    width: 200px;
+    height: 90px;
+    border: solid 2px black;
+    padding: 10px;
+}
+h3{
+    text-align: center;
+    color:blue
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    color: rgba(0, 183, 255, 0.897);
+    margin: 40px;
+}
+.principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(201, 211, 243) ; 
+    width: 500px;
+    height: 120px;
+    margin-left: 500px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}   
+.mensaje {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 200; color: black;
+    font-style: normal;
+    background-color: rgb(201, 211, 243);
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+    border: solid 0,5 px black 
+}
+.selectubicdorm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 150px;
+    text-align: right;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    font-style: normal;
+    background-color: rgb(201, 211, 243);
+    margin: auto;
+    padding: 10px;
+    border: solid 0,5 px black;
+}
+.emprendimiento {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: aliceblue;
+    align-items: center;
+    margin: 20px;
+    border: solid 2px black;
+    padding: 20px
+}
+.divtextoemprendimiento {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.divimagenemprendimiento {
+    justify-content: center;
+    margin: 10px;
+}
+.emprendimiento1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    margin: 20px;
+    border: solid 2px black;
+    padding: 20px
+}
+.divtextoemprendimiento1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.divimagenemprendimiento1 {
+    flex-direction: column;
+    justify-content: center;
+}
+.emprendimiento2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: aliceblue;
+    align-items: center;
+    margin: 20px;
+    border: solid 2px black;
+    padding: 20px
+}
+.divtextoemprendimiento2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imagenemprendimiento2 {
+    flex-direction: column;
+    justify-content: center;
+}
+.menuventas {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 150px;
+    text-align: right;
+    justify-content: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 161, 211);
+    font-size: medium;
+    font-weight: 500;
+    font-style: normal;
+    margin: auto;
+    padding: 10px;
+    border: solid 0,5 px black;
+}
+.casasenventa {
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    margin: 20px;    
+}
+.casas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 310px;
+    height: 360px;
+    align-items: center;
+    text-align: justify;
+    border: solid 1px black;
+    margin: 10px;
+    padding: 10px;
+}
+.casas img {
+    margin: 10px;
+}
+.alquileres {
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    margin: 20px;    
+}

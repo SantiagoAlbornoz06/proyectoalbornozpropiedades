@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas</title>
+    <LInk REL ="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../imag/Logo simple.jpg" alt="Logo de la empresa">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./alquileres.html">Alquileres</a></li>
+                <li><a href="#">Ventas</a></li>
+                <li class="emp"><a href="./emprendimientos.html">Emprendimientos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <h2>PROPIEDADES EN VENTA</h2>
+    <Form class="menuventa">
+        <div>PRECIOS</div>      
+        <input type="radio" name "pesos" value="Pesos"><label for="pesos">PESOS</label>
+        <input type="radio" name "dolares" value="Dolares"><label for="dolares">DOLARES</label>
+        <input type="number" name="desde" id="desde" placeholder="Desde" required>
+        <input type="number" name="hasta" id ="hasta" placeholder="Hasta" required>
+    </Form>
+    <form class="menuventa">
+        <label for="Tipo de Propiedad">Tipo de Propiedad</label>
+        <select name="tipo de propiedad" id="tipo de propiedad">
+            <div>
+                <label for="">Tipo de propiedad</label>
+                <option value="indistinto">Indistinto</option>
+                <option value="terrenos">Terrenos</option>
+                <option value="departamentos">Departamentos</option>
+                <option value="casas">Casas</option>
+                <option value="quinta">Quinta</option>
+                <option value="oficina">Oficina</option>
+                <option value="locales">Locales</option>
+                <option value="edificiocomercial">Edificios Comerciales</option>
+                <option value="campo">Campo</option>
+                <option value="cochera">Cochera</option>
+                <option value="ph">PH</option>
+                <option value="deposito">Deposito</option>
+                <option value="fondodecomercio">Fondo de Comercio</option>
+                <option value="galpon">Galpon</option>
+            </div>
+        </select>
+        <label for="ubicacion">ubicacion</label>
+        <select name="ubicacion" id="ubicacion">
+            <div>
+                <label for="">Ubicacion</label>
+                <option value="LLavallol">Llavallol</option>
+                <option value="Lomas de Zamora">Lomas de Zamora</option>
+                <option value="Monte Grande">Monte Grande</option>
+                <option value="Luis Guillon">Luis Guillon</option>
+                <option value="Canning">Canning</option>
+                <option value="Otros">Otros</option>
+            </div>
+        </select>
+        <label for="dormitorios">dormitorios</label>
+        <select name="dormitorios" id="dormitorios">
+            <div>
+                <label for="">Dormitorios</label>
+                <option value="Monoambiente">Monoambiente</option>
+                <option value="1 Habitacion">1 Habitacion</option>
+                <option value="2 Habitaciones">2 Habitaciones</option>
+            </div>
+        </select>
+        <input type="submit" value="Enviar">
+    </Form>
+        <div class="alquileres">
+            <article class="casas">
+                <img src="../imag/casa1.jfif" alt="Casa llavallol calle cuyo">
+                <h3>Casa en Llavallol sobre la calle cuyo al 900</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde temporibus velit earum commodi sint voluptate nesciunt mollitia nulla rerum sapiente quisquam quibusdam reprehenderit beatae, excepturi praesentium odit, officiis impedit.</p>
+            </article>
+            <article class="casas">
+                <img src="../imag/casa2.jfif" alt="casa lomas de zamora calle azara">
+                <h3>Casa en Lomas de Zamora sobre la calle azara al 600</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde temporibus velit earum commodi sint voluptate nesciunt mollitia nulla rerum sapiente quisquam quibusdam reprehenderit beatae, excepturi praesentium odit, officiis impedit.</p>
+            </article>
+            <article class="casas">
+                <img src="../imag/casa3.jfif" alt="casa luis guillon">
+                <h3>Casa en Luis Guillon sobre la calle Madariaga al 2300</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde temporibus velit earum commodi sint voluptate nesciunt mollitia nulla rerum sapiente quisquam quibusdam reprehenderit beatae, excepturi praesentium odit, officiis impedit.</p>
+            </article>
+        </div>
+        <div class="alquileres">
+            <article class="casas">
+                <img src="../imag/galpon1.jfif" alt="galpon en llavallol">
+                <h3>galpon en Llavallol sobre la calle Mercedes al 1200</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde temporibus velit earum commodi sint voluptate nesciunt mollitia nulla rerum sapiente quisquam quibusdam reprehenderit beatae, excepturi praesentium odit, officiis impedit.</p>
+            </article>
+            <article class="casas">
+                <img src="../imag/depto1.jfif" alt="departamento en monte grande">
+                <h3>Departamento en Monte Graande sobre la calle Rodriguez al 2800</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde temporibus velit earum commodi sint voluptate nesciunt mollitia nulla rerum sapiente quisquam quibusdam reprehenderit beatae, excepturi praesentium odit, officiis impedit.</p>
+            </article>
+            <article class="casas">
+                <img src="../imag/dpto3.jfif" alt="departamento en lomas de zamora">
+                <h3>Departamento en Monte Grande sobre la calle Alem al 200</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde temporibus velit earum commodi sint voluptate nesciunt mollitia nulla rerum sapiente quisquam quibusdam reprehenderit beatae, excepturi praesentium odit, officiis impedit.</p>
+            </article>
+        </div>
+        <div class="alquileres">
+            <article class="casas">
+                <img src="../imag/galpon2.jfif" alt="Galpon en luis guillon">
+                <h3>Galpon en Luis Guillon sobre la calle Hernandez al 400</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde temporibus velit earum commodi sint voluptate nesciunt mollitia nulla rerum sapiente quisquam quibusdam reprehenderit beatae, excepturi praesentium odit, officiis impedit.</p>
+            </article>
+        </div>
+</main>
+</body>
+</html>

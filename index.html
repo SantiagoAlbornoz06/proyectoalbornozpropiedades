@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imag/Logo simple.jpg" type="image/x-icon">
+    <title>Albornoz Propiedades</title>
+    <Link REL ="stylesheet" href="./css/style.css">
+</head>
+<body>
+        <header>
+            <div class="logo">
+            <img src= "imag/Logo simple.jpg" alt="logo de la empresa">
+            </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio   </a></li>
+                <li><a href="./pages/alquileres.html">Alquileres     </a></li>
+                <li><a href="./pages/ventas.html">Ventas</a></li>
+                <li class="emp"><a href="./pages/emprendimientos.html">Emprendiemientos</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <form class="menu"></form>
+                <div class="principal">
+                    <h3>PRECIOS</h3>
+                </div>
+                <div class="principal">      
+                    <input type= "radio" name ="pesos" value step="1000"><label for="pesos">$</label>
+                    <input type="radio" name="dolares" value="Dolares"><label for="dolares">US$</label>
+                    <input type="number" name="desde" id="desde" placeholder="Desde" required value step="1000">
+                    <input type="number" name="hasta" id ="hasta" placeholder="Hasta" required value step="1000">
+                </div>
+                <div class="principal">
+                    <label for="operacion"> Tipo de Operacion</label>
+                    <select name="operacion" size= "4" id="operacion">
+                        <option value="indistinto">Indistinto</option>
+                        <option value="ventas">Ventas</option>
+                        <option value="alquileres">Alquileres</option>
+                    </select>
+                </div>           
+                <div class="principal">
+                    <label for="tipo de propiedad">Tipo de Propiedad</label>
+                    <select name="tipo de propiedad" id="tipo de propiedad" size="5">
+                            <option value="indistinto">Indistinto</option>
+                            <option value="terrenos">Terrenos</option>
+                            <option value="departamentos">Departamentos</option>
+                            <option value="casas">Casas</option>
+                            <option value="quinta">Quinta</option>
+                            <option value="oficina">Oficina</option>
+                            <option value="locales">Locales</option>
+                            <option value="edificiocomercial">Edificios Comerciales</option>
+                            <option value="campo">Campo</option>
+                            <option value="cochera">Cochera</option>
+                            <option value="ph">PH</option>
+                            <option value="deposito">Deposito</option>
+                            <option value="fondodecomercio">Fondo de Comercio</option>
+                            <option value="galpon">Galpon</option>
+                    </select>
+                </div>
+                <div class="principal">
+                    <label for="ubicacion">Ubicacion</label>
+                    <select name="ubicacion" id="ubicacion" size="4">
+                        <option value="indistinto">Indistinto</option>
+                        <option value="capitalfederal">Capital Federal</option>
+                        <option value="zonasur">Zona Sur </option>
+                    </select>                 
+                </div>
+                <div class="principal">
+                    <input type="submit" value="Enviar"> 
+                </div>
+            </form>
+    </main> 
+    <footer>  
+        <hr>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.9563637787414!2d-58.421349524733046!3d-34.807039668263585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3a021659d45%3A0x550f28a5cb1f4a92!2sCuyo%20958!5e0!3m2!1ses-419!2sar!4v1694447377221!5m2!1ses-419!2sar" width="100" height="80" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+        </div>
+        <p>Albornoz Propiedades</p>
+        <p>matricula 4038</p>
+        <hr>
+    </footer>
+</body>
+</html>
