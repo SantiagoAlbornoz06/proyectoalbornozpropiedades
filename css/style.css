@@ -20,6 +20,10 @@ a{
     text-decoration: none;
     color: black;
 }
+a:hover{
+    color: blue;
+    border-bottom: solid blue 3px;
+}
 nav {
     display: flex;
     align-items: center;
@@ -40,8 +44,13 @@ li {
     height: 50px;
     width: 100px;
 }
+main {
+    margin: 20px;
+    padding: 10px;
+}
 .emp {
-    width: 200px;
+    width: 180px;
+    text-align: center;
 }
 .logo {
     width:  200px;
@@ -55,14 +64,16 @@ li {
     padding: 10px;
 }
 h3{
+    font-size: 18 px;
     text-align: center;
     color:rgb(5, 5, 51)
 }
 h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
+    font-size: 22px;
+    font-weight: bold;
     text-align: center;
+    text-decoration: underline;
     color: rgb(5, 5, 51);
     margin: 40px;
 }
@@ -77,13 +88,6 @@ h2 {
     margin-left: 200px;
     padding: 10px;
 }
-.menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: auto;
-    padding: 10px;
-}   
 .mensaje {
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
@@ -96,22 +100,6 @@ h2 {
     margin: auto;
     padding: 10px;
     border: solid 0,5 px black 
-}
-.selectubicdorm {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 150px;
-    text-align: right;
-    justify-content: flex-start;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    font-weight: 500;
-    font-style: normal;
-    background-color: rgb(201, 211, 243);
-    margin: auto;
-    padding: 10px;
-    border: solid 0,5 px black;
 }
 .emprendimiento {
     display: flex;
@@ -170,22 +158,24 @@ h2 {
     flex-direction: column;
     justify-content: center;
 }
-.menuventas {
+.menuventa {
     display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 150px;
-    text-align: right;
-    justify-content: flex-end;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(247, 161, 211);
     font-size: medium;
     font-weight: 500;
     font-style: normal;
-    margin: auto;
+    margin: 50px;
     padding: 10px;
-    border: solid 0,5 px black;
-}
+    }
+.menuuno {
+        text-align: center;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px;
+}   
 .casasenventa {
     display: flex;
     flex-direction: row;
@@ -196,20 +186,141 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 310px;
+    width: 320px;
     height: 360px;
     align-items: center;
     text-align: justify;
     border: solid 1px black;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
 }
-.casas img {
-    margin: 10px;
+@media (max-width: 768px){
+    .casas{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .alquileres {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 .alquileres {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     background-color: aliceblue;
     margin: 20px;    
+}
+.iniciouno{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 10px;
+    padding: 20px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+    grid-template-areas: 
+    "uno dos tres"
+    "cuatro cinco seis" 
+    ". siete ."
+    ;
+}
+.container img{
+    width: 100%;
+    border: solid 2px black;
+    margin: 30px;
+}
+.uno{
+    grid-area:uno;
+    width: 300px;
+    height: 300px;
+}
+.dos{
+    grid-area:dos;
+    width: 300px;
+    height: 300px;
+}
+.tres {
+    grid-area:tres;
+    width: 300px;
+    height: 300px;
+}
+.cuatro{
+    grid-area:cuatro;
+    width: 300px;
+    height: 300px;
+}
+.cinco{
+    grid-area:cinco;
+    width: 300px;
+    height: 300px;
+}
+.seis{
+    grid-area:seis;
+    width: 300px;
+    height: 300px;
+}
+.siete{
+    grid-area:siete;
+    width: 300px;
+    height: 300px;
+}
+@media (max-width: 600px){
+    .container{
+    grid-template-columns: 1fr;
+    gap: 20px;
+    grid-template-areas: 
+    "uno"
+    "dos"
+    "tres"
+    "cuatro"
+    "cinco"
+    "seis" 
+    "siete";
+    }
+    .menuuno{
+        flex-direction: column;   
+    }
+    .menuventa{
+        flex-direction: column;
+    }
+    .iniciouno{
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        }
+    ul{
+        flex-direction: column;
+    }
+    li{
+        flex-direction: column;
+        width: 50px;
+        height: 15px;
+    }
+    .emprendimiento{
+        flex-direction: column;
+    }
+    .emprendimiento1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        padding: 50px;
+    }
+    .imagenemprendimiento1{
+        justify-content: center;
+    }
+    .emprendimiento2{
+        flex-direction: column;
+    }
+    .emp{
+        width: 90px;
+    }
 }
