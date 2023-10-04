@@ -4,12 +4,13 @@
 }
 html {
     font-size: 62,5%;
+    background-color: rgb(169, 171, 177);
 }
 header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: antiquewhite;
+    background-color: rgb(77, 71, 116);
     margin: 20px
 }
 a{
@@ -55,14 +56,14 @@ li {
 }
 h3{
     text-align: center;
-    color:blue
+    color:rgb(5, 5, 51)
 }
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: lighter;
     text-align: center;
-    color: rgba(0, 183, 255, 0.897);
+    color: rgb(5, 5, 51);
     margin: 40px;
 }
 .principal {
@@ -71,13 +72,14 @@ h2 {
     align-items: center;
     justify-content: center;
     background-color:rgb(201, 211, 243) ; 
-    width: 500px;
-    height: 120px;
-    margin-left: 500px;
+    width: 900px;
+    height: 80px;
+    margin-left: 200px;
+    padding: 10px;
 }
 .menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin: auto;
     padding: 10px;
@@ -87,6 +89,7 @@ h2 {
     font-size: medium;
     font-weight: 200; color: black;
     font-style: normal;
+    text-align: center;
     background-color: rgb(201, 211, 243);
     width: 300px;
     height: 300px;

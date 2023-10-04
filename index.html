@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./imag/Logo simple.jpg" type="image/x-icon">
-    <title>Albornoz Propiedades</title>
-    <Link REL ="stylesheet" href="./css/style.css">
+    <title>Albornoz Propiedades</title>   
+    <Link rel ="stylesheet" href="./css/style.css">
 </head>
 <body>
         <header>
@@ -23,44 +23,42 @@
         </nav>
         </header>
         <main>
-            <form class="menu"></form>
-                <div class="principal">
-                    <h3>PRECIOS</h3>
-                </div>
-                <div class="principal">      
-                    <input type= "radio" name ="pesos" value step="1000"><label for="pesos">$</label>
-                    <input type="radio" name="dolares" value="Dolares"><label for="dolares">US$</label>
-                    <input type="number" name="desde" id="desde" placeholder="Desde" required value step="1000">
-                    <input type="number" name="hasta" id ="hasta" placeholder="Hasta" required value step="1000">
-                </div>
-                <div class="principal">
-                    <label for="operacion"> Tipo de Operacion</label>
-                    <select name="operacion" size= "4" id="operacion">
-                        <option value="indistinto">Indistinto</option>
+            <form class="menuuno">
+                <h3>PRECIOS</h3>     
+                        <input type= "radio" name ="pesos" value step="1000"><label for="pesos">$</label>
+                        <input type="radio" name="dolares" value="Dolares"><label for="dolares">US$</label>
+                        <input type="number" name="desde" id="desde" placeholder="Desde" required value step="1000">
+                        <input type="number" name="hasta" id ="hasta" placeholder="Hasta" required value step="1000">
+            </form>
+            <form class="menuventa">
+                <div class="iniciouno">
+                    <label for="operacion">Tipo de Operacion</label>
+                    <select name="operacion" size= "3" id="operacion">
+                        <option value="indistinto" class="color">Indistinto</option>
                         <option value="ventas">Ventas</option>
                         <option value="alquileres">Alquileres</option>
                     </select>
                 </div>           
-                <div class="principal">
+                <div class="iniciouno">
                     <label for="tipo de propiedad">Tipo de Propiedad</label>
                     <select name="tipo de propiedad" id="tipo de propiedad" size="5">
-                            <option value="indistinto">Indistinto</option>
-                            <option value="terrenos">Terrenos</option>
-                            <option value="departamentos">Departamentos</option>
-                            <option value="casas">Casas</option>
-                            <option value="quinta">Quinta</option>
-                            <option value="oficina">Oficina</option>
-                            <option value="locales">Locales</option>
-                            <option value="edificiocomercial">Edificios Comerciales</option>
-                            <option value="campo">Campo</option>
-                            <option value="cochera">Cochera</option>
-                            <option value="ph">PH</option>
-                            <option value="deposito">Deposito</option>
-                            <option value="fondodecomercio">Fondo de Comercio</option>
-                            <option value="galpon">Galpon</option>
+                        <option value="indistinto">Indistinto</option>
+                        <option value="terrenos">Terrenos</option>
+                        <option value="departamentos">Departamentos</option>
+                        <option value="casas">Casas</option>
+                        <option value="quinta">Quinta</option>
+                        <option value="oficina">Oficina</option>
+                        <option value="locales">Locales</option>
+                        <option value="edificiocomercial">Edificios Comerciales</option>
+                        <option value="campo">Campo</option>
+                        <option value="cochera">Cochera</option>
+                        <option value="ph">PH</option>
+                        <option value="deposito">Deposito</option>
+                        <option value="fondodecomercio">Fondo de Comercio</option>
+                        <option value="galpon">Galpon</option>
                     </select>
                 </div>
-                <div class="principal">
+                <div class="iniciouno">
                     <label for="ubicacion">Ubicacion</label>
                     <select name="ubicacion" id="ubicacion" size="4">
                         <option value="indistinto">Indistinto</option>
@@ -68,11 +66,20 @@
                         <option value="zonasur">Zona Sur </option>
                     </select>                 
                 </div>
-                <div class="principal">
+                <div>
                     <input type="submit" value="Enviar"> 
-                </div>
+                </div>    
             </form>
-    </main> 
+        <div class="container">  
+                <img src="./imag/casa1.jfif" alt="Casa llavallol calle cuyo" class="uno">
+                <img src="./imag/casa2.jfif" alt="casa lomas de zamora calle azara" class="dos"> 
+                <img src="./imag/casa3.jfif" alt="casa luis guillon" class="tres">
+                <img src="./imag/galpon1.jfif" alt="galpon en llavallol" class="cuatro">
+                <img src="./imag/depto1.jfif" alt="departamento en monte grande" class="cinco">
+                <img src="./imag/dpto3.jfif" alt="departamento en lomas de zamora" class="seis">
+                <img src="./imag/galpon2.jfif" alt="Galpon en luis guillon" class="siete">
+         </div>   
+        </main> 
     <footer>  
         <hr>
         <div>
@@ -81,6 +88,7 @@
         <p>Albornoz Propiedades</p>
         <p>matricula 4038</p>
         <hr>
+        <a href="https://www.flaticon.es/iconos-gratis/facebook" title="facebook iconos">Facebook iconos creados por Pixel perfect - Flaticon</a>
     </footer>
 </body>
 </html>
