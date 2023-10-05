@@ -64,13 +64,28 @@ main {
     padding: 10px;
 }
 .redes{
-    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
     color: black;
     text-align: left;
+    margin: 10px;
+    padding: 5px;
 }
 .redes img{
     width: 30px;
     height: 30px;
+}
+.redes1{
+font-family: Arial, Helvetica, sans-serif;
+font-size: xx-small;
+color: black;
+text-align: left;
+margin: 10px;
+padding: 5px;
+}
+.redes1 img{
+    width: 20px;
+    height: 20px;
 }
 h3{
     font-size: 18 px;
@@ -332,4 +347,9 @@ h2 {
     .emp{
         width: 90px;
     }
+}
+footer{
+    background-color:rgb(77, 71, 116);
+    margin: 20px;
+    padding: 5px;
 }
