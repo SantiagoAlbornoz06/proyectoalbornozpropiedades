@@ -63,6 +63,15 @@ main {
     border: solid 2px black;
     padding: 10px;
 }
+.redes{
+    font-size: small;
+    color: black;
+    text-align: left;
+}
+.redes img{
+    width: 30px;
+    height: 30px;
+}
 h3{
     font-size: 18 px;
     text-align: center;
