@@ -4,7 +4,6 @@
 }
 html {
     font-size: 62,5%;
-    background-color: rgb(169, 171, 177);
 }
 header {
     display: flex;
@@ -12,6 +11,9 @@ header {
     justify-content: flex-start;
     background-color: rgb(77, 71, 116);
     margin: 20px
+}
+body{
+    background-color: rgb(169, 171, 177);
 }
 a{
     font-family: Arial, Helvetica, sans-serif;
@@ -56,6 +58,7 @@ main {
     width:  200px;
     align-items: center;
     margin: 10px;
+    text-align: center;
 }
 .logo img {
     width: 200px;
@@ -63,23 +66,31 @@ main {
     border: solid 2px black;
     padding: 10px;
 }
+.iconos{
+    display: flex;
+    flex-direction: row;
+}
 .redes{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: black;
-    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 80px;
     margin: 10px;
     padding: 5px;
 }
 .redes img{
     width: 30px;
     height: 30px;
+    margin: 5px;
 }
 .redes1{
 font-family: Arial, Helvetica, sans-serif;
 font-size: xx-small;
 color: black;
 text-align: left;
+text-size-adjust: 5px;
 margin: 10px;
 padding: 5px;
 }
@@ -88,7 +99,7 @@ padding: 5px;
     height: 20px;
 }
 h3{
-    font-size: 18 px;
+    font-size: 18px;
     text-align: center;
     color:rgb(5, 5, 51)
 }
@@ -113,17 +124,22 @@ h2 {
     padding: 10px;
 }
 .mensaje {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     font-weight: 200; color: black;
     font-style: normal;
     text-align: center;
     background-color: rgb(201, 211, 243);
-    width: 300px;
-    height: 300px;
-    margin: auto;
+    width: 400px;
+    height: 400Px;
+    margin: 10px;
     padding: 10px;
-    border: solid 0,5 px black 
+    border: solid 1px black 
 }
 .emprendimiento {
     display: flex;
@@ -210,8 +226,8 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 320px;
-    height: 360px;
+    width: 100%;
+    height: 100%;
     align-items: center;
     text-align: justify;
     border: solid 1px black;
@@ -233,6 +249,7 @@ h2 {
     flex-direction: row;
     justify-content: center;
     background-color: aliceblue;
+    height: 100%;
     margin: 20px;    
 }
 .iniciouno{
@@ -294,6 +311,24 @@ h2 {
     width: 300px;
     height: 300px;
 }
+footer{
+    background-color:rgb(77, 71, 116);
+    margin: 20px;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+}
+.datos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: black;
+    margin: 20px;
+}
+.pie{
+    display: flex;
+    flex-direction: row;
+}
 @media (max-width: 600px){
     .container{
     grid-template-columns: 1fr;
@@ -326,7 +361,7 @@ h2 {
     li{
         flex-direction: column;
         width: 50px;
-        height: 15px;
+        height: 20px;
     }
     .emprendimiento{
         flex-direction: column;
@@ -347,9 +382,10 @@ h2 {
     .emp{
         width: 90px;
     }
-}
-footer{
-    background-color:rgb(77, 71, 116);
-    margin: 20px;
-    padding: 5px;
+    .pie{
+        flex-direction: column;
+    }
+    .iconos{
+        flex-direction: column;
+    }
 }
